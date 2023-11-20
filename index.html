@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multiplication Table</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f7e7ff;
+  }
+
+  h1 {
+    color: #663399;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: #333;
+    font-style: italic;
+  }
+
+  label {
+    font-size: 18px;
+    color: #333;
+  }
+
+  input {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #663399;
+    border-radius: 4px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #663399;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #512b6b;
+  }
+
+  p {
+    font-size: 20px;
+    color: #333;
+    margin-top: 30px;
+  }
+
+  span.result {
+    color: #663399;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+<h1>Multiplication Table Generator</h1>
+<h2>42154 Yash Patil</h2>
+<label for="Given">Enter a number:</label>
+<input type="number" id="Given" placeholder="Enter a number">
+<br><br>
+<button onclick="generateTables()">Generate Table</button>
+<p>Multiplication Table using For Loop: <span id="displayf" class="result"></span></p>
+<p>Multiplication Table using While Loop: <span id="displayw" class="result"></span></p>
+<p>Multiplication Table using Do-While Loop: <span id="displayd" class="result"></span></p>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

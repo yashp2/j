@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arrays 42154 Yash Patil</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        span {
+            display: block;
+            margin-top: 10px;
+        }
+
+        #display {
+            font-weight: bold;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Array Operations</h1>
+    <p>Enter Array Size:</p>
+    <input id="size" type="number" placeholder="Enter array size">
+    <button onclick="SetSize()">Set Size</button>
+
+    <p>Enter Array:</p>
+    <input id="ar" type="text" placeholder="Enter array">
+    <button onclick="Enter()">Enter</button>
+
+    <p>Delete specific element</p>
+    <input id="d1" type="text" placeholder="Enter element to delete">
+    <button onclick="Delete()">Delete</button>
+    <br>
+
+    <p>Find specific element</p>
+    <input id="c1" type="text" placeholder="Enter element to find">
+    <button onclick="CheckElement()">Find</button>
+
+    <span>
+        <p>Empty the array</p>
+        <button onclick="EmptyArray()">Empty</button>
+    </span>
+
+    <br>
+    <br>
+    <p>Print the array</p>
+    <button onclick="Printy()">Print</button>
+    <p>Output: <span id="display"></span></p>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

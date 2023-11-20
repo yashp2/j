@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #tableContainer {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        table {
+            margin-top: 20px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multiplication Table Generator</h1>
+    <input type="number" id="number" placeholder="Enter a number">
+    <button onclick="generateTable()">Generate Table</button>
+    <div id="tableContainer"></div>
+
+    <script>
+        function generateTable() {
+            const numberInput = document.getElementById('number');
+            const tableContainer = document.getElementById('tableContainer');
+
+            // Clear previous table, if any
+            tableContainer.innerHTML = '';
+
+            // Get the number from the input field
+            const number = parseInt(numberInput.value);
+
+            // Check if the input is a valid number
+            if (isNaN(number)) {
+                tableContainer.innerText = 'Please enter a valid number.';
+                return;
+            }
+
+            // Generate and display the multiplication table
+            let tableHTML = '<h2>Multiplication Table for ' + number + '</h2><table>';
+            tableHTML += '<tr><th>Multiplier</th><th>Result</th></tr>';
+            for (let i = 1; i <= 10; i++) {
+                tableHTML += '<tr><td>' + number + ' x ' + i + '</td><td>' + (number * i) + '</td></tr>';
+            }
+            tableHTML += '</table>';
+            tableContainer.innerHTML = tableHTML;
+        }
+    </script>
+</body>
+</html>

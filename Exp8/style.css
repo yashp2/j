@@ -1,0 +1,27 @@
+
+    h1 {
+        color: red;
+    }
+
+    nav {
+        padding: 2%;
+        color: blueviolet;
+        text-align: center;
+        font-size: large;
+        background-color: cornsilk;
+    }
+
+    img {
+        float: left;
+    }
+
+    div {
+        text-align: center;
+        font-size: large;
+        display: inline-block;
+    }
+
+    p {
+        font-size: small;
+        color: red;
+    }
